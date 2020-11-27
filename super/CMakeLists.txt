@@ -27,7 +27,6 @@ ExternalProject_Add(
         catch2
         URL https://github.com/catchorg/Catch2/archive/v2.13.3.tar.gz
         URL_HASH SHA256=fedc5b008f7eb574f45098e7c7138211c543f0f8ad04792090e790511697a877
-
         CMAKE_ARGS ${CMAKE_ARGS}
             -DCATCH_BUILD_TESTING=OFF
             -DCATCH_ENABLE_WERROR=OFF
