@@ -12,10 +12,10 @@ set(CMAKE_ARGS
 
 ExternalProject_Add(
         boost
-	URL https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.tar.bz2
-	URL_HASH SHA256=83bfc1507731a0906e387fc28b7ef5417d591429e51e788417fe9ff025e116b1
-	#URL https://dl.bintray.com/boostorg/release/1.71.0/source/boost_1_71_0.tar.bz2
-	#URL_HASH SHA256=d73a8da01e8bf8c7eda40b4c84915071a8c8a0df4a6734537ddde4a8580524ee
+	#URL https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.tar.bz2
+	#URL_HASH SHA256=83bfc1507731a0906e387fc28b7ef5417d591429e51e788417fe9ff025e116b1
+	URL https://dl.bintray.com/boostorg/release/1.71.0/source/boost_1_71_0.tar.bz2
+	URL_HASH SHA256=d73a8da01e8bf8c7eda40b4c84915071a8c8a0df4a6734537ddde4a8580524ee
         BUILD_IN_SOURCE 1
         UPDATE_COMMAND ""
         CONFIGURE_COMMAND ./bootstrap.sh --prefix=${DEVROOT}
